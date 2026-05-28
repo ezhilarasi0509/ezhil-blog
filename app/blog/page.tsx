@@ -1,6 +1,5 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { posts } from "@/lib/posts";
-import Link from "next/link";
 
 export default function BlogPage() {
   return (
@@ -11,24 +10,17 @@ export default function BlogPage() {
         <h1 className="text-4xl font-semibold tracking-tight">Blog</h1>
 
         <p className="mt-4 text-lg leading-8 text-neutral-600">
-          Dated notes on what I learn, build, and understand.
+          A dated collection of my learning notes, technical understanding, and
+          personal documentation.
         </p>
 
-        <div className="mt-12 space-y-5">
-          {posts.map((post) => (
-            <Link
-              key={post.href}
-              href={post.href}
-              className="block rounded-2xl border border-neutral-200 p-5 transition hover:border-neutral-400"
-            >
-              <p className="text-sm text-neutral-500">{post.date}</p>
-              <h2 className="mt-2 text-xl font-medium">{post.title}</h2>
-              <p className="mt-2 leading-7 text-neutral-600">
-                {post.description}
-              </p>
-            </Link>
-          ))}
+        <div className="mt-16 rounded-2xl border border-neutral-200 p-6">
+          <p className="leading-7 text-neutral-600">
+            I will publish posts here as I document what I learn.
+          </p>
         </div>
+
+        <Footer />
       </section>
     </main>
   );

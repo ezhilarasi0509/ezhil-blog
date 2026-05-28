@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function WritingPage() {
@@ -11,6 +12,8 @@ export default function WritingPage() {
         <p className="mt-4 text-lg leading-8 text-neutral-600">
           Longer notes and reflections from my learning and engineering journey.
         </p>
+
+        <Footer />
       </section>
     </main>
   );

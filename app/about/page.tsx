@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function AboutPage() {
@@ -15,13 +16,18 @@ export default function AboutPage() {
             Vellore.
           </p>
 
-          
+          <p>
+            I created this website to document what I learn in a clean,
+            professional, and dated way.
+          </p>
 
           <p>
             My goal is to use this space as a long-term record of my learning,
             technical writing, and growth as a software engineer.
           </p>
         </div>
+
+        <Footer />
       </section>
     </main>
   );

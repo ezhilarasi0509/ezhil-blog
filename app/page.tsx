@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -24,11 +25,25 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mt-20 border-t border-neutral-200 pt-10">
-          <p className="text-sm leading-7 text-neutral-500">
-            New posts will be added as I document my learning journey.
-          </p>
+        <section className="mt-20 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-neutral-200 p-5">
+            <p className="text-sm text-neutral-500">Blog</p>
+            <h2 className="mt-2 text-lg font-medium">Learning documentation</h2>
+            <p className="mt-2 leading-7 text-neutral-600">
+              Dated posts on what I learn, understand, and build.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-5">
+            <p className="text-sm text-neutral-500">Writing</p>
+            <h2 className="mt-2 text-lg font-medium">Long-form notes</h2>
+            <p className="mt-2 leading-7 text-neutral-600">
+              Clear reflections and explanations from my engineering journey.
+            </p>
+          </div>
         </section>
+
+        <Footer />
       </section>
     </main>
   );
