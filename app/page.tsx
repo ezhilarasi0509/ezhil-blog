@@ -1,32 +1,17 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white px-6 py-16 text-neutral-900">
       <section className="mx-auto max-w-3xl">
-        <nav className="mb-20 flex items-center justify-between text-sm">
-          <h1 className="font-semibold">Ezhilarasi S</h1>
-
-          <div className="flex gap-6 text-neutral-600">
-            <a href="/blog" className="hover:text-neutral-900">
-              Blog
-            </a>
-            <a href="/writing" className="hover:text-neutral-900">
-              Writing
-            </a>
-            <a href="/off-topic" className="hover:text-neutral-900">
-              Off-topic
-            </a>
-            <a href="/about" className="hover:text-neutral-900">
-              About
-            </a>
-          </div>
-        </nav>
+        <Navbar />
 
         <section className="space-y-6">
           <p className="text-sm text-neutral-500">Hi, I&apos;m Ezhilarasi S</p>
 
-          <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            I document what I learn as a software engineer.
-          </h2>
+          <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+            I document what I learn.
+          </h1>
 
           <p className="text-lg leading-8 text-neutral-600">
             I completed my Integrated M.Tech in Software Engineering from VIT
@@ -34,38 +19,15 @@ export default function Home() {
           </p>
 
           <p className="text-lg leading-8 text-neutral-600">
-            This website is my personal space to document what I learn, build,
-            explore, and understand — with dates, notes, terminal commands, and
-            clear explanations.
+            This is my personal space for writing about the things I learn,
+            understand, build, and explore as I grow as a software engineer.
           </p>
         </section>
 
-        <section className="mt-16">
-          <h3 className="mb-4 text-xl font-semibold">Recent documentation</h3>
-
-          <div className="space-y-4">
-            <article className="rounded-2xl border border-neutral-200 p-5">
-              <p className="text-sm text-neutral-500">May 28, 2026</p>
-              <h4 className="mt-2 text-lg font-medium">
-                Setting Up My Personal Blog Website
-              </h4>
-              <p className="mt-2 text-neutral-600">
-                Documenting the first steps and commands used while building
-                this website.
-              </p>
-            </article>
-
-            <article className="rounded-2xl border border-neutral-200 p-5">
-              <p className="text-sm text-neutral-500">May 28, 2026</p>
-              <h4 className="mt-2 text-lg font-medium">
-                Commands I Used While Building This Blog
-              </h4>
-              <p className="mt-2 text-neutral-600">
-                A clean record of terminal commands used during the initial
-                project setup.
-              </p>
-            </article>
-          </div>
+        <section className="mt-20 border-t border-neutral-200 pt-10">
+          <p className="text-sm leading-7 text-neutral-500">
+            New posts will be added as I document my learning journey.
+          </p>
         </section>
       </section>
     </main>
