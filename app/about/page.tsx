@@ -6,18 +6,10 @@ export default function Home() {
           <h1 className="font-semibold">Ezhilarasi S</h1>
 
           <div className="flex gap-6 text-neutral-600">
-            <a href="/blog" className="hover:text-neutral-900">
-              Blog
-            </a>
-            <a href="/writing" className="hover:text-neutral-900">
-              Writing
-            </a>
-            <a href="/off-topic" className="hover:text-neutral-900">
-              Off-topic
-            </a>
-            <a href="/about" className="hover:text-neutral-900">
-              About
-            </a>
+            <a href="/blog">Blog</a>
+            <a href="/writing">Writing</a>
+            <a href="/off-topic">Off-topic</a>
+            <a href="/about">About</a>
           </div>
         </nav>
 
@@ -35,8 +27,8 @@ export default function Home() {
 
           <p className="text-lg leading-8 text-neutral-600">
             This website is my personal space to document what I learn, build,
-            explore, and understand — with dates, notes, terminal commands, and
-            clear explanations.
+            explore, and understand — with dates, notes, commands, and clear
+            explanations.
           </p>
         </section>
 
@@ -45,25 +37,17 @@ export default function Home() {
 
           <div className="space-y-4">
             <article className="rounded-2xl border border-neutral-200 p-5">
-              <p className="text-sm text-neutral-500">May 28, 2026</p>
+              <p className="text-sm text-neutral-500">Coming soon</p>
               <h4 className="mt-2 text-lg font-medium">
                 Setting Up My Personal Blog Website
               </h4>
-              <p className="mt-2 text-neutral-600">
-                Documenting the first steps and commands used while building
-                this website.
-              </p>
             </article>
 
             <article className="rounded-2xl border border-neutral-200 p-5">
-              <p className="text-sm text-neutral-500">May 28, 2026</p>
+              <p className="text-sm text-neutral-500">Coming soon</p>
               <h4 className="mt-2 text-lg font-medium">
                 Commands I Used While Building This Blog
               </h4>
-              <p className="mt-2 text-neutral-600">
-                A clean record of terminal commands used during the initial
-                project setup.
-              </p>
             </article>
           </div>
         </section>
